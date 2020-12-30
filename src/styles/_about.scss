@@ -1,0 +1,90 @@
+.about {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  @include respond(tab-port) {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  &__figure {
+    margin-left: 10rem;
+    margin-top: -7rem;
+    z-index: 2;
+    @include respond(tab-port) {
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
+  &__img--1 {
+    width: 100%;
+    @include respond(tab-port) {
+      width: 56%;
+    }
+  }
+  &__img-ut {
+    width: fit-content;
+    position: relative;
+    align-self: flex-end;
+    margin-top: -5rem;
+    &::after {
+      content: "";
+      width: 10rem;
+      height: 10rem;
+      background-color: $color-primary;
+      border-radius: 50%;
+      position: absolute;
+      top: -20%;
+      left: -20%;
+      @include respond(tab-port) {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+    @include respond(tab-port) {
+      align-self: flex-end;
+      width: 30%;
+    }
+  }
+  &__img--2 {
+    width: 100%;
+
+    z-index: 1;
+  }
+  &__text {
+    padding-top: 6rem;
+    align-self: center;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    @include respond(tab-port) {
+      width: 100%;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+    }
+    &_primary {
+      width: 90%;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 1.25;
+      @include respond(tab-port) {
+        width: 30%;
+        align-self: flex-end;
+      }
+    }
+    &_secondary {
+      padding-top: 4rem;
+      width: 95%;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.6;
+      @include respond(tab-port) {
+        width: 30%;
+        align-self: start;
+        padding-top: 0;
+      }
+    }
+  }
+}
