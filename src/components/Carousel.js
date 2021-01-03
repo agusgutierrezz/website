@@ -9,8 +9,6 @@ import medical from "../assets/medical.jpg";
 import tutti from "../assets/tutti.jpg";
 import recipic from "../assets/recipic.jpg";
 
-const handleDragStart = (e) => e.preventDefault();
-
 const responsive = {
   0: { items: 1 },
   568: { items: 2 },
