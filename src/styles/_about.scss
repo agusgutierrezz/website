@@ -57,12 +57,36 @@
     width: 90%;
     display: flex;
     justify-content: center;
-
+    position: relative;
     flex-direction: column;
     @include respond(tab-port) {
       width: 100%;
       flex-direction: row-reverse;
       justify-content: space-around;
+    }
+    &__group {
+      width: 50%;
+    }
+    &__circle {
+      height: 4rem;
+      width: 4rem;
+      border: 3px solid $color-primary;
+      border-radius: 50%;
+      animation: bubble-anim 5s ease-out infinite;
+      &--1 {
+        border: 3px solid $color-primary;
+        border-radius: 50%;
+        animation: bubble-anim 3s ease-out infinite;
+        height: 6rem;
+        width: 6rem;
+      }
+      &--2 {
+        border: 3px solid $color-primary;
+        border-radius: 50%;
+        animation: bubble-anim 2s ease-out infinite;
+        height: 8rem;
+        width: 8rem;
+      }
     }
     &_primary {
       width: 90%;

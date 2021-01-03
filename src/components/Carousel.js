@@ -5,6 +5,9 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import houses from "../assets/houses.jpg";
 import food from "../assets/food.jpg";
 import natour from "../assets/natour.jpg";
+import medical from "../assets/medical.jpg";
+import tutti from "../assets/tutti.jpg";
+import recipic from "../assets/recipic.jpg";
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -15,35 +18,98 @@ const responsive = {
 };
 
 const items = [
-  <div className="carousel__card--1">
-    <img src={houses} onDragStart={handleDragStart} className="carousel__img" />
-    <p className="carousel__text">Name</p>
-    <button className="carousel__btn">&rarr; Explore</button>
+  <div className="carousel__card--mar">
+    <div className="carousel__card-img">
+      <div
+        style={{ backgroundImage: `url(${houses})` }}
+        className="carousel__card-img-child"
+      ></div>
+    </div>
+    <div className="carousel__card_info">
+      {" "}
+      <p className="carousel__text">Name</p>
+      <button className="carousel__btn">
+        {" "}
+        <span className="carousel__span">&rarr;</span> Explore
+      </button>
+    </div>
   </div>,
-  <div className="carousel__card--2">
-    <img src={food} onDragStart={handleDragStart} className="carousel__img" />
-    <p className="carousel__text">Name</p>
-    <button className="carousel__btn">&rarr; Explore</button>
+  <div className="carousel__card--margin">
+    <div className="carousel__card-img ">
+      <div
+        className="carousel__card-img-child"
+        style={{ backgroundImage: `url(${food})` }}
+      ></div>
+    </div>
+    <div className="carousel__card_info">
+      {" "}
+      <p className="carousel__text">Name</p>
+      <button className="carousel__btn">
+        {" "}
+        <span className="carousel__span">&rarr;</span> Explore
+      </button>
+    </div>
   </div>,
-  <div className="carousel__card--3">
-    <img src={natour} onDragStart={handleDragStart} className="carousel__img" />
-    <p className="carousel__text">Name</p>
-    <button className="carousel__btn">&rarr; Explore</button>
+  <div className="carousel__card--mar">
+    <div className="carousel__card-img">
+      <div
+        className="carousel__card-img-child"
+        style={{ backgroundImage: `url(${natour})` }}
+      ></div>
+    </div>
+    <div className="carousel__card_info">
+      {" "}
+      <p className="carousel__text">Name</p>
+      <button className="carousel__btn">
+        {" "}
+        <span className="carousel__span">&rarr;</span> Explore
+      </button>
+    </div>
   </div>,
-  <div className="carousel__card--1">
-    <img src={houses} onDragStart={handleDragStart} className="carousel__img" />
-    <p className="carousel__text">Name</p>
-    <button className="carousel__btn">&rarr; Explore</button>
+  <div className="carousel__card--mar">
+    <div className="carousel__card-img ">
+      <div
+        className="carousel__card-img-child"
+        style={{ backgroundImage: `url(${medical})` }}
+      ></div>
+    </div>
+    <div className="carousel__card_info">
+      {" "}
+      <p className="carousel__text">Name</p>
+      <button className="carousel__btn">
+        {" "}
+        <span className="carousel__span">&rarr;</span> Explore
+      </button>
+    </div>
   </div>,
-  <div className="carousel__card--2">
-    <img src={food} onDragStart={handleDragStart} className="carousel__img" />
+  <div className="carousel__card--margin">
+    <div className="carousel__card-img">
+      <div
+        className="carousel__card-img-child"
+        style={{ backgroundImage: `url(${tutti})` }}
+      ></div>
+    </div>
     <p className="carousel__text">Name</p>
-    <button className="carousel__btn">&rarr; Explore</button>
+    <button className="carousel__btn">
+      {" "}
+      <span className="carousel__span">&rarr;</span> Explore
+    </button>
   </div>,
-  <div className="carousel__card--3">
-    <img src={natour} onDragStart={handleDragStart} className="carousel__img" />
-    <p className="carousel__text">Name</p>
-    <button className="carousel__btn">&rarr; Explore</button>
+  <div className="carousel__card--mar ">
+    <div className="carousel__card-img ">
+      <div
+        className="carousel__card-img-child"
+        style={{ backgroundImage: `url(${recipic})` }}
+      ></div>
+    </div>
+    <div className="carousel__card_info">
+      {" "}
+      <p className="carousel__text">Name</p>
+      <button className="carousel__btn">
+        {" "}
+        <span className="carousel__span">&rarr;</span> Explore
+      </button>
+    </div>
   </div>,
 ];
 

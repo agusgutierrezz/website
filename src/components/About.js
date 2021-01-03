@@ -1,11 +1,10 @@
 import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
 
 import berlin from "../assets/berlin.jpg";
 import mendoza from "../assets/mendoza.png";
 const About = () => {
   return (
-    <div>
+    <div className="">
       <div className="about">
         <img className="about__img--1" src={berlin} alt="Berlin" />
         <div className="about__img-ut">
@@ -14,10 +13,19 @@ const About = () => {
       </div>
 
       <div className="about__text">
-        <h3 className="about__text_primary">
-          I´m a Front End Developer based in Berlin working to make the web a
-          happier place.
-        </h3>
+        <div className="about__text_primary">
+          {/* <div className="about__text__group">
+            {" "}
+            <div className="about__text__circle"></div>
+            <div className="about__text__circle--1"></div>
+            <div className="about__text__circle--2"></div>
+          </div> */}
+          <h3>
+            I´m a Front End Developer based in Berlin working to make the web a
+            happier place.
+          </h3>
+        </div>
+
         <h5 className="about__text_secondary">
           I’m a hard working and dedicated professional front-end developer/user
           interface designer with a keen eye for detail, and a determination to

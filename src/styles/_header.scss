@@ -1,28 +1,49 @@
 .header {
   position: relative;
   height: 100vh;
-
+  width: 100%;
+  &__bg {
+    background-image: url("../assets/hola.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    animation-name: moveInTop;
+    animation-duration: 0.7s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+  }
   &__title {
     position: absolute;
     width: 50%;
     top: 20%;
     margin-left: 4rem;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 1rem;
     animation-name: moveInBottom;
     animation-duration: 1s;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
     animation-fill-mode: both;
     animation-timing-function: ease-out;
     @include respond(tab-port) {
-      top: 50%;
+      top: 40%;
+      font-size: 4.5rem;
+    }
+    @include respond(big-desktop) {
+      top: 30%;
     }
   }
   &__text {
     font-weight: 200;
-
+    position: fixed;
+    right: -2rem;
+    top: 12rem;
     transform: rotate(-90deg);
 
     /* Legacy vendor prefixes that you probably don't need... */
@@ -43,10 +64,7 @@
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   }
 }
-nav {
-  position: relative;
-  background-color: red;
-}
+
 .navigation {
   &__checkbox {
     display: none;

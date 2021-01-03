@@ -9,3 +9,34 @@
     transform: translate(0);
   }
 }
+@keyframes moveInTop {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateY(6rem);
+    fill: red;
+  }
+}
+@keyframes bubble-anim {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(20%);
+  }
+  48% {
+    transform: translateX(40%);
+  }
+  68% {
+    transform: translateX(80%);
+  }
+  80% {
+    transform: translateX(90%);
+  }
+  97%,
+  100% {
+    transform: translateX(100%);
+  }
+}
