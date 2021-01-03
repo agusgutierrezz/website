@@ -1,4 +1,6 @@
 import React from "react";
+import ScrollAnimation from "react-animate-on-scroll";
+
 import berlin from "../assets/berlin.jpg";
 import mendoza from "../assets/mendoza.png";
 const About = () => {
@@ -10,6 +12,7 @@ const About = () => {
           <img className="about__img--2" src={mendoza} alt="Mendoza" />
         </div>
       </div>
+
       <div className="about__text">
         <h3 className="about__text_primary">
           I´m a Front End Developer based in Berlin working to make the web a

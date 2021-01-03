@@ -1,5 +1,7 @@
 import Header from "./components/Header";
 import About from "./components/About";
+import Contact from "./components/Contact";
+import Carousel from "./components/Carousel";
 
 import "./App.scss";
 
@@ -10,6 +12,8 @@ function App() {
         <Header />
       </header>
       <About />
+      <Carousel />
+      <Contact />
     </div>
   );
 }

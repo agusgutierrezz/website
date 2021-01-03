@@ -1,0 +1,45 @@
+.carousel {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: #fdf2f2;
+  padding: 4rem;
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  &__card {
+    width: 20rem;
+    margin: 5rem;
+    &--2 {
+      @include respond(tab-port) {
+        margin-top: 10rem;
+      }
+    }
+  }
+
+  &__img {
+    width: 20rem;
+    transition: 0.5s all ease-in-out;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+  &__btn {
+    background-color: transparent;
+    border: 0;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 400;
+  }
+}
+.alice-carousel {
+  &__dots {
+    list-style: none;
+    text-align: center;
+
+    @include respond(tab-port) {
+      position: absolute;
+      top: 0;
+      left: 35rem;
+    }
+  }
+}
