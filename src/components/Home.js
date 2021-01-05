@@ -9,7 +9,8 @@ function Home() {
     <div>
       <Header
         place={"Start a project"}
-        name={"Welcome to my portfolio. CSS is everywhere."}
+        name={"Welcome to my portfolio."}
+        nameTwo={"CSS is everywhere."}
         link={"/contact"}
       />
 

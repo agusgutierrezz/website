@@ -3,6 +3,7 @@
   margin-top: 3rem;
   background-color: #edeff6;
   padding: 4rem;
+
   &__title {
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -11,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 100%;
     &--margin {
       margin-top: 0;
       @include respond(tab-port) {
@@ -20,8 +21,8 @@
     }
 
     &-img {
-      width: 15rem;
-      height: 15rem;
+      width: 20rem;
+      height: 20rem;
       overflow: hidden;
       position: relative;
       @include respond(tab-port) {
@@ -35,7 +36,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        transition: all 0.3s;
+        transition: all 0.5s ease;
       }
       &:hover {
         .carousel__card-img-child {
@@ -71,7 +72,7 @@
     @include respond(tab-port) {
       position: absolute;
       top: 0;
-      left: 35rem;
+      left: 50rem;
     }
   }
 }

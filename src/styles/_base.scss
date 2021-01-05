@@ -20,7 +20,7 @@ $font-logo: "Quattrocento Sans", sans-serif;
     }
   }
   @if $breakpoint == big-desktop {
-    @media (max-width: 112.5em) {
+    @media (min-width: 112.5em) {
       @content;
     }
   }

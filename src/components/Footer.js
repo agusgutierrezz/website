@@ -22,9 +22,11 @@ const footer = () => {
             <img src={likedin} alt="" />
           </picture>
         </div>
-        <div className="footer__copyright">
-          this portfolio is a react app, made using SASS and love. the design is
-          from vrrb.com.
+        <div className="footer_wrapper">
+          <div className="footer__copyright">
+            this portfolio is a react app, made using SASS and love. the design
+            is from vrrb.com.
+          </div>
         </div>
       </div>
     </div>

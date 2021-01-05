@@ -113,19 +113,22 @@ const items = [
 
 const Carousel = () => {
   return (
-    <div className="carousel">
+    <div className="">
       <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
         <h1 className="carousel__title">Featured projects</h1>
       </ScrollAnimation>
       <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutRight">
         <h1 className="carousel__title">Featured projects</h1>
       </ScrollAnimation>
-      <AliceCarousel
-        mouseTracking
-        items={items}
-        responsive={responsive}
-        disableButtonsControls={true}
-      />
+
+      <div className="carousel">
+        <AliceCarousel
+          mouseTracking
+          items={items}
+          responsive={responsive}
+          disableButtonsControls={true}
+        />
+      </div>
     </div>
   );
 };

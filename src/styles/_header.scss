@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
+    background-size: contain;
     animation-name: moveInTop;
     animation-duration: 0.7s;
     animation-delay: 1s;
@@ -16,24 +17,28 @@
     left: 0;
     height: 100vh;
     width: 100%;
+    @include respond(tab-port) {
+      background-size: initial;
+    }
   }
   &__title {
     position: absolute;
-    width: 50%;
-    top: 20%;
+    font-size: 2rem;
+    width: 75%;
+    top: 30%;
     margin-left: 4rem;
-    font-size: 2.5rem;
-    font-weight: 400;
     line-height: 1.25;
-    letter-spacing: 1rem;
+    letter-spacing: 0.3rem;
     animation-name: moveInBottom;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: both;
     animation-timing-function: ease-out;
-    @include respond(tab-port) {
+    word-wrap: break-word;
+    @include respond(tab-land) {
       top: 40%;
       font-size: 4.5rem;
+      width: 60%;
     }
     @include respond(big-desktop) {
       top: 30%;
@@ -42,8 +47,8 @@
   &__text {
     font-weight: 200;
     position: fixed;
-    right: -2rem;
-    top: 12rem;
+    right: -0.5rem;
+    top: 15rem;
     transform: rotate(-90deg);
     z-index: 1000;
     /* Legacy vendor prefixes that you probably don't need... */
@@ -228,15 +233,14 @@
     display: block;
     box-sizing: border-box;
     border-radius: 51%;
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     background-color: $color-primary;
 
     transition: all 0.2s ease;
     margin-bottom: 2rem;
     &:hover {
-      width: 2rem;
-      height: 2rem;
+      transform: scale(0.5);
     }
   }
 }

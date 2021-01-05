@@ -9,7 +9,9 @@ function Header(props) {
       <div className="header">
         <div className="header__bg"> </div>{" "}
         <h3 className="header__text">{props.place}</h3>
-        <h1 className="header__title">{props.name}</h1>
+        <div className="header__title">
+          <h1>{props.name}</h1>
+        </div>
       </div>
     </>
   );
