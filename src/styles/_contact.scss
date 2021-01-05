@@ -1,4 +1,4 @@
-.contact {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,5 +79,9 @@
     /* transform: rotate(90deg) translate(0, -100%); */
 
     transition: all 0.2s;
+  }
+}
+.contact {
+  &__bg {
   }
 }

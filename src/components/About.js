@@ -4,9 +4,10 @@ import berlin from "../assets/berlin.jpg";
 import mendoza from "../assets/mendoza.png";
 const About = () => {
   return (
-    <div className="">
+    <div className="" id="about">
       <div className="about">
         <img className="about__img--1" src={berlin} alt="Berlin" />
+
         <div className="about__img-ut">
           <img className="about__img--2" src={mendoza} alt="Mendoza" />
         </div>
@@ -14,12 +15,12 @@ const About = () => {
 
       <div className="about__text">
         <div className="about__text_primary">
-          {/* <div className="about__text__group">
-            {" "}
-            <div className="about__text__circle"></div>
-            <div className="about__text__circle--1"></div>
-            <div className="about__text__circle--2"></div>
-          </div> */}
+          <div className="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
           <h3>
             I´m a Front End Developer based in Berlin working to make the web a
             happier place.

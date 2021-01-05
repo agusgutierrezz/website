@@ -2,21 +2,18 @@ import React from "react";
 
 import Navigation from "./Navigation";
 
-const Header = () => {
+function Header(props) {
   return (
     <>
-      <Navigation />
-
+      <Navigation link={props.link} />
       <div className="header">
         <div className="header__bg"> </div>{" "}
-        <h3 className="header__text">Start a project</h3>
-        <h1 className="header__title">
-          Welcome to my portfolio. Look around and enjoy!
-        </h1>
+        <h3 className="header__text">{props.place}</h3>
+        <h1 className="header__title">{props.name}</h1>
       </div>
     </>
   );
-};
+}
 
 export default Header;
 // We pass a callback to Child

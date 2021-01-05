@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap");
+
 $color-primary: #ff5e5e;
+$font-logo: "Quattrocento Sans", sans-serif;
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (min-width: 37.5em) {
@@ -30,7 +34,7 @@ $color-primary: #ff5e5e;
 }
 html {
   font-size: 62.5%;
-
+  scroll-behavior: smooth;
   @include respond(phone) {
     font-size: 50%;
   }
@@ -53,4 +57,12 @@ body {
   @include respond(tab-port) {
     padding: 0;
   }
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  cursor: pointer;
 }

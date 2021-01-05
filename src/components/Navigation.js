@@ -1,8 +1,10 @@
 import React from "react";
 
-const Navigation = () => {
+import { Link } from "react-router-dom";
+
+const Navigation = (props) => {
   return (
-    <div className="navbar">
+    <div className="navbar" id="navbar">
       <div className="navigation">
         <input
           type="checkbox"
@@ -19,25 +21,29 @@ const Navigation = () => {
         <nav className="navigation__nav">
           <ul className="navigation__list">
             <li className="navigation__item">
-              <a href="#" className="navigation__link">
-                <span>01</span>About Me!
-              </a>
+              <Link to={"/"} className="navigation__link">
+                {" "}
+                <span>01</span>About Me!{" "}
+              </Link>
             </li>
             <li className="navigation__item">
-              <a href="#" className="navigation__link">
+              <a href="#mywork" className="navigation__link">
                 <span>02</span>My Work!
               </a>
             </li>
             <li className="navigation__item">
-              <a href="#" className="navigation__link">
+              <Link to={"/contact"} className="navigation__link">
                 <span>03</span>Contact Me!
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
       </div>
+
       <div className="project">
-        <figure className="project__circle"></figure>
+        <Link to={props.link}>
+          <span className="project__circle"></span>
+        </Link>
       </div>
     </div>
   );

@@ -1,19 +1,19 @@
-import Header from "./components/Header";
-import About from "./components/About";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Contact from "./components/Contact";
-import Carousel from "./components/Carousel";
+import Home from "./components/Home";
 
 import "./App.scss";
 
 function App() {
   return (
     <div>
-      <header>
-        <Header />
-      </header>
-      <About />
-      <Carousel />
-      <Contact />
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/Contact" component={Contact} />
+        </Switch>
+      </Router>
     </div>
   );
 }
