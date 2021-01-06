@@ -3,6 +3,7 @@ import About from "./About";
 import Footer from "./Footer";
 import Carousel from "./Carousel";
 import Top from "./Top";
+import ContactForm from "./ContactForm";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <About />
       <Carousel />
       <Top />
+      <ContactForm />
       <Footer />
     </div>
   );
