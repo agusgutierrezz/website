@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
 
 $color-primary: #ae344d;
-$font-logo: "Quattrocento Sans", sans-serif;
+$font-primary: "Arvo", serif;
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
@@ -52,7 +52,7 @@ html {
 body {
   box-sizing: border-box;
 
-  font-family: "Courier New", Courier, monospace;
+  font-family: $font-primary;
 
   @include respond(tab-port) {
     padding: 0;

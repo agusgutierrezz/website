@@ -113,7 +113,7 @@ const items = [
 
 const Carousel = () => {
   return (
-    <div className="">
+    <div className="carousel__container">
       <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
         <h1 className="carousel__title">Featured projects</h1>
       </ScrollAnimation>
