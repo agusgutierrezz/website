@@ -12,7 +12,7 @@ function Home() {
         place={"Start a project"}
         name={"Welcome to my portfolio."}
         nameTwo={"CSS is everywhere."}
-        link={"/contact"}
+        link={"/#contact"}
       />
 
       <About />

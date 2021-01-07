@@ -52,9 +52,10 @@
       text-align: left;
       font-size: 3rem;
       margin-top: 2rem;
+      margin-bottom: 2rem;
       @include respond(tab-port) {
         align-self: flex-start;
-
+        margin: 0;
         font-size: 4rem;
         width: 100%;
       }

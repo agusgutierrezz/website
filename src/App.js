@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Contact from "./components/Contact";
+import WorkDetail from "./components/WorkDetail";
 import Home from "./components/Home";
-
+import houses from "./assets/houses.jpg";
 import "./App.scss";
 
 function App() {
@@ -10,7 +10,18 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/Contact" component={Contact} />
+          <Route
+            path="/cssInteractions"
+            component={() => (
+              <WorkDetail
+                title={`Very big title`}
+                paragraph={`Some longer explanation about the title.A little big longer`}
+                img={houses}
+                link={"https://natourfront.netlify.app/"}
+                linkGh={"https://github.com/agusgutierrezz/natour"}
+              />
+            )}
+          />
         </Switch>
       </Router>
     </div>

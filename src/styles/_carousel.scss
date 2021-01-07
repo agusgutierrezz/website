@@ -50,10 +50,11 @@
   &__btn {
     background-color: transparent;
     border: 0;
-    font-family: "Courier New", Courier, monospace;
     font-weight: 400;
     margin-top: 2rem;
     transition: all 0.2s;
+    font-family: $font-primary;
+
     cursor: pointer;
     &:hover {
       transform: translateX(2rem);

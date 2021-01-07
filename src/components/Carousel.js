@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -26,10 +27,12 @@ const items = [
     <div className="carousel__card_info">
       {" "}
       <p className="carousel__text">Name</p>
-      <button className="carousel__btn">
-        {" "}
-        <span className="carousel__span">&rarr;</span> Explore
-      </button>
+      <Link to={"/cssInteractions"}>
+        <button className="carousel__btn">
+          {" "}
+          <span className="carousel__span">&rarr;</span> Explore
+        </button>
+      </Link>
     </div>
   </div>,
   <div className="carousel__card--margin">
