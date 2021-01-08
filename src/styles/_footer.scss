@@ -7,7 +7,7 @@
   background-color: black;
   @include respond(tab-port) {
     height: 30vh;
-    margin-top: -25rem;
+    margin-top: -20rem;
   }
   &__links {
     margin-left: 3rem;

@@ -1,4 +1,6 @@
 import Header from "./Header";
+import Bottom from "./Bottom";
+
 import About from "./About";
 import Footer from "./Footer";
 import Carousel from "./Carousel";
@@ -11,9 +13,9 @@ function Home() {
       <Header
         place={"Start a project"}
         name={"Welcome to my portfolio."}
-        nameTwo={"CSS is everywhere."}
-        link={"/#contact"}
+        link={"#contact"}
       />
+      <Bottom />
 
       <About />
       <Carousel />

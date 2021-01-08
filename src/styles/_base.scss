@@ -66,3 +66,15 @@ body {
   margin-top: 2rem;
   cursor: pointer;
 }
+.bottom {
+  font-size: 5rem;
+  position: absolute;
+  bottom: 30rem;
+  left: 2rem;
+  animation-name: moveInTop;
+  animation-duration: 2s;
+  animation-delay: 1.2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+  cursor: pointer;
+}

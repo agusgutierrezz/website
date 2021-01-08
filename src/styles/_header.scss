@@ -10,7 +10,7 @@
     background-position: center;
     position: absolute;
     background-size: contain;
-    animation-name: moveInTop;
+    animation-name: moveInTopLarge;
     animation-duration: 0.7s;
     animation-delay: 1s;
     animation-fill-mode: both;
@@ -34,14 +34,15 @@
     line-height: 1.25;
     letter-spacing: 0.3rem;
     animation-name: moveInBottom;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-delay: 1s;
     animation-fill-mode: both;
     animation-timing-function: ease-out;
     word-wrap: break-word;
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       top: 40%;
-      font-size: 4.5rem;
+      font-size: 6rem;
+      font-weight: lighter;
       width: 60%;
     }
     @include respond(big-desktop) {

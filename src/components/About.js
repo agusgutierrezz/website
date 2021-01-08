@@ -15,12 +15,6 @@ const About = () => {
 
       <div className="about__text">
         <div className="about__text_primary">
-          <div className="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
           <h3>
             I´m a Front End Developer based in Berlin working to make the web a
             happier place.

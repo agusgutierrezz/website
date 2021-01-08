@@ -4,10 +4,10 @@ import Header from "./Header";
 const WorkDetail = (props) => {
   return (
     <>
-      <Header place={"Start a project"} />
+      <Header place={"Go back to Home"} link={"/"} />
       <div className="workBg">
         <div className="workBg__info">
-          <h1 className=""> {props.title}</h1>
+          <h1 className="workBg__info--h1"> {props.title}</h1>
           <p className="workBg__info--title">{props.paragraph}</p>
           <div>
             <a className="workBg__info--btn" href={props.link}>
@@ -19,7 +19,7 @@ const WorkDetail = (props) => {
             </a>
           </div>
         </div>
-        <div style={{ width: "100%" }}>
+        <div className="workBg__img--container">
           <img className="workBg__img" src={props.img} alt="project-img" />
         </div>
       </div>

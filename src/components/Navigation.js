@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = (props) => {
   return (
@@ -37,7 +38,9 @@ const Navigation = (props) => {
       </div>
 
       <div className="project">
-        <span className="project__circle"></span>
+        <Link to={props.link}>
+          <span className="project__circle"></span>
+        </Link>
       </div>
     </div>
   );

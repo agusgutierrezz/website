@@ -35,8 +35,9 @@ function MyForm() {
   return (
     <div className="contact__dashboard">
       <div className="contact__assets">
+        <h1 className="contact__assets--text">Have a project?</h1>
         <h1 className="contact__assets--text">
-          Have a project? Let´s talk! I´ll get back to you right away!{" "}
+          Let´s talk! I´ll get back to you right away!{" "}
         </h1>
         <img src={contact} alt="" className="contact__assets--img" />
       </div>

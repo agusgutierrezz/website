@@ -12,10 +12,21 @@
 @keyframes moveInTop {
   0% {
     transform: translate(0);
+    opacity: 0;
   }
 
   100% {
-    transform: translateY(10rem);
+    transform: translateY(15rem);
+    opacity: 1;
+  }
+}
+@keyframes moveInTopLarge {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateY(15rem);
   }
 }
 @keyframes bubble-anim {

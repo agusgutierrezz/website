@@ -26,8 +26,8 @@ const items = [
     </div>
     <div className="carousel__card_info">
       {" "}
-      <p className="carousel__text">Name</p>
-      <Link to={"/cssInteractions"}>
+      <p className="carousel__text">CSS Grid</p>
+      <Link to={"/grid"}>
         <button className="carousel__btn">
           {" "}
           <span className="carousel__span">&rarr;</span> Explore
@@ -60,11 +60,13 @@ const items = [
     </div>
     <div className="carousel__card_info">
       {" "}
-      <p className="carousel__text">Name</p>
-      <button className="carousel__btn">
-        {" "}
-        <span className="carousel__span">&rarr;</span> Explore
-      </button>
+      <p className="carousel__text">CSS Interactions</p>
+      <Link to={"/cssInteractions"}>
+        <button className="carousel__btn">
+          {" "}
+          <span className="carousel__span">&rarr;</span> Explore
+        </button>
+      </Link>
     </div>
   </div>,
   <div className="carousel__card--mar">
@@ -118,10 +120,10 @@ const Carousel = () => {
   return (
     <div className="carousel__container">
       <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
-        <h1 className="carousel__title">Featured projects</h1>
+        <h1 className="carousel__title">What I do</h1>
       </ScrollAnimation>
       <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutRight">
-        <h1 className="carousel__title">Featured projects</h1>
+        <h1 className="carousel__title">What I do</h1>
       </ScrollAnimation>
 
       <div className="carousel">
