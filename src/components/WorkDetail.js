@@ -1,26 +1,38 @@
 import React from "react";
-import Header from "./Header";
+import Navigation from "./Navigation";
 
 const WorkDetail = (props) => {
   return (
     <>
-      <Header place={"Go back to Home"} link={"/"} />
-      <div className="workBg">
-        <div className="workBg__info">
-          <h1 className="workBg__info--h1"> {props.title}</h1>
-          <p className="workBg__info--title">{props.paragraph}</p>
-          <div>
-            <a className="workBg__info--btn" href={props.link}>
-              &rarr; Go to the page!
-            </a>
+      <Navigation link={"/"} place={"Back to home"} />
 
-            <a className="workBg__info--btn" href={props.linkGh}>
-              &rarr; Go to the Repo!
-            </a>
+      <div className="workBg__background">&nbsp;</div>
+      <div className="workBg">
+        <div className="workBg__wrapper">
+          <div className="workBg__box--a">
+            {" "}
+            <h1 className="workBg__box--a--h1">{props.title}</h1>
           </div>
-        </div>
-        <div className="workBg__img--container">
-          <img className="workBg__img" src={props.img} alt="project-img" />
+          <div
+            className="workBg__box--b"
+            style={{ backgroundImage: `url(${props.img})` }}
+          >
+            {" "}
+            {/* <img className="workBg__box--b--img" src={props.img} alt="" /> */}
+          </div>
+          <div className="workBg__box--c">
+            {" "}
+            <p className="workBg__box--c--title">{props.paragraph}</p>
+            <div className="workBg__box--c--buttons">
+              {" "}
+              <a className="workBg__box--c--btn" href={props.link}>
+                &rarr; Go to the page!
+              </a>
+              <a className="workBg__box--c--btn" href={props.linkGh}>
+                &rarr; Go to the Repo!
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>

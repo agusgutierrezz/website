@@ -4,7 +4,7 @@ import berlin from "../assets/berlin.jpg";
 import mendoza from "../assets/mendoza.png";
 const About = () => {
   return (
-    <div className="" id="about">
+    <div className="">
       <div className="about">
         <img className="about__img--1" src={berlin} alt="Berlin" />
 
@@ -13,7 +13,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="about__text">
+      <div className="about__text " id="about">
         <div className="about__text_primary">
           <h3>
             I´m a Front End Developer based in Berlin working to make the web a

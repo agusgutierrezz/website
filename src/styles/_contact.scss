@@ -127,9 +127,9 @@
       border-radius: 50%;
       transition: all 0.5s;
       transform: rotate(-45deg);
+      align-self: flex-start;
       @include respond(tab-port) {
         margin-top: 5rem;
-        align-self: flex-start;
       }
       &:hover {
         transform: scale(1.1) rotate(0deg);

@@ -44,11 +44,13 @@ const items = [
     </div>
     <div className="carousel__card_info">
       {" "}
-      <p className="carousel__text">Name</p>
-      <button className="carousel__btn">
-        {" "}
-        <span className="carousel__span">&rarr;</span> Explore
-      </button>
+      <p className="carousel__text">React Hooks</p>
+      <Link to={"/ironcook"}>
+        <button className="carousel__btn">
+          {" "}
+          <span className="carousel__span">&rarr;</span> Explore
+        </button>
+      </Link>
     </div>
   </div>,
   <div className="carousel__card--mar">
@@ -78,11 +80,13 @@ const items = [
     </div>
     <div className="carousel__card_info">
       {" "}
-      <p className="carousel__text">Name</p>
-      <button className="carousel__btn">
-        {" "}
-        <span className="carousel__span">&rarr;</span> Explore
-      </button>
+      <p className="carousel__text">Customize Bootsrap</p>
+      <Link to={"/bootstrap"}>
+        <button className="carousel__btn">
+          {" "}
+          <span className="carousel__span">&rarr;</span> Explore
+        </button>
+      </Link>
     </div>
   </div>,
   <div className="carousel__card--margin">
@@ -118,7 +122,7 @@ const items = [
 
 const Carousel = () => {
   return (
-    <div className="carousel__container">
+    <div id="myWork" className="carousel__container">
       <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
         <h1 className="carousel__title">What I do</h1>
       </ScrollAnimation>
