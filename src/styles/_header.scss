@@ -27,8 +27,8 @@
   &__title {
     position: absolute;
     font-size: 2rem;
-    width: 75%;
-    top: 43%;
+    width: 90%;
+    top: 45%;
     font-weight: 200;
     margin-left: 4rem;
     line-height: 1.25;
@@ -51,7 +51,7 @@
   }
   &__text {
     font-weight: 200;
-    font-family: $font-secondary;
+    font-family: $font-primary;
     position: fixed;
     right: -2.5rem;
     top: 15rem;

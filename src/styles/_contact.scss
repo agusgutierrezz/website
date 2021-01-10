@@ -13,7 +13,6 @@
     height: 100%;
     align-items: center;
     @include respond(tab-port) {
-      margin-left: 3rem;
       flex-direction: row-reverse;
     }
   }
@@ -33,7 +32,6 @@
   &__assets {
     width: 80%;
     @include respond(tab-port) {
-      margin: 5rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;

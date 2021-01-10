@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import WorkDetail from "./components/projects/WorkDetail";
 import Home from "./components/layout/Home";
 import Contact from "./components/contact/Contact";
+import Projects from "./components/projects/Projects";
 import houses from "./assets/houses.jpg";
 import natour from "./assets/natour.jpg";
 import medical from "./assets/medical.jpg";
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/projects" component={Projects} />
           <Route
             path="/cssInteractions"
             component={() => (

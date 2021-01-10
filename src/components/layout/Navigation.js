@@ -27,15 +27,15 @@ const Navigation = (props) => {
           <nav className="navigation__nav">
             <ul className="navigation__list">
               <li className="navigation__item" onClick={onClick}>
-                <a className="navigation__link" href="#about">
-                  <span>01</span>About Me!
-                </a>
+                <Link to={"/"} className="navigation__link">
+                  <span>01</span>Home!
+                </Link>
               </li>
 
               <li className="navigation__item" onClick={onClick}>
-                <a className="navigation__link" href="#myWork">
+                <Link to={"/projects"} className="navigation__link">
                   <span>02</span>My Work!
-                </a>
+                </Link>
               </li>
               <li className="navigation__item" onClick={onClick}>
                 <Link to={"/contact"} className="navigation__link">

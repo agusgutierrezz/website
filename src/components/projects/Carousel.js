@@ -138,6 +138,12 @@ const Carousel = () => {
           disableButtonsControls={true}
         />
       </div>
+      <Link to={"/projects"}>
+        <button className="carousel__btn">
+          {" "}
+          <span className="carousel__span">&rarr;</span> Explore All!
+        </button>
+      </Link>
     </div>
   );
 };
