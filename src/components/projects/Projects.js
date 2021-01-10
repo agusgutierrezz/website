@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../layout/Header";
 import Bottom from "../layout/Bottom";
 
@@ -9,15 +9,18 @@ import medical from "../../assets/medical.jpg";
 import tutti from "../../assets/tutti.jpg";
 import recipic from "../../assets/recipic.jpg";
 const Projects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div>
-      <Bottom />
-
       <Header
         link={"/"}
         place={"Back to home"}
         name={"Look around and enjoy my work!"}
       />
+      <Bottom />
       <div className="projects__container">
         <div className="projects__text"></div>
         <div className="projects__images gallery">

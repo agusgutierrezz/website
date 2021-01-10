@@ -28,7 +28,7 @@
     position: absolute;
     font-size: 2rem;
     width: 90%;
-    top: 45%;
+    top: 40%;
     font-weight: 200;
     margin-left: 4rem;
     line-height: 1.25;
@@ -40,6 +40,7 @@
     animation-timing-function: ease-out;
     word-wrap: break-word;
     @include respond(tab-port) {
+      left: 15%;
       top: 40%;
       font-size: 6rem;
       font-weight: lighter;

@@ -23,10 +23,11 @@
   }
   &__wrapper {
     display: grid;
-
-    grid-template-rows: 60vh 30vh 20vh;
+    padding-bottom: 8rem;
+    grid-template-rows: 60vh 25vh min-content;
     width: 100%;
     @include respond(tab-port) {
+      padding-bottom: 0rem;
       grid-gap: 10rem;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 40vh auto;

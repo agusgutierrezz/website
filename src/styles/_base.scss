@@ -69,7 +69,7 @@ body {
 .bottom {
   font-size: 5rem;
   position: absolute;
-  bottom: 30rem;
+  top: 40rem;
   left: 2rem;
   animation-name: moveInTop;
   animation-duration: 2s;
@@ -78,4 +78,9 @@ body {
   animation-timing-function: ease-out;
   cursor: pointer;
   z-index: 120;
+  @include respond(tab-port) {
+    font-size: 10rem;
+    top: 30rem;
+    left: 2rem;
+  }
 }
