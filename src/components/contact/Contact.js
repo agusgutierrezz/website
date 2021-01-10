@@ -1,6 +1,6 @@
 import React from "react";
 import MyForm from "./MyForm";
-import Navigation from "./Navigation";
+import Navigation from "../layout/Navigation";
 
 const Contact = () => {
   return (

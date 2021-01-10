@@ -1,6 +1,6 @@
 import React from "react";
 
-import likedin from "../assets/linkedin.svg";
+import likedin from "../../assets/linkedin.svg";
 const footer = () => {
   return (
     <div className="footer">

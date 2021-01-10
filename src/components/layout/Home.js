@@ -3,9 +3,9 @@ import Header from "./Header";
 
 import About from "./About";
 import Footer from "./Footer";
-import Carousel from "./Carousel";
+import Carousel from "../projects/Carousel";
 import Top from "./Top";
-import ContactForm from "./ContactForm";
+import ContactForm from "../contact/ContactForm";
 
 function Home() {
   return (

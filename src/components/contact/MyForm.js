@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import contact from "../assets/contact.jpg";
+import contact from "../../assets/contact.jpg";
 
 function MyForm() {
   const [serverState, setServerState] = useState({

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import WorkDetail from "./components/WorkDetail";
-import Home from "./components/Home";
-import Contact from "./components/Contact";
+import WorkDetail from "./components/projects/WorkDetail";
+import Home from "./components/layout/Home";
+import Contact from "./components/contact/Contact";
 import houses from "./assets/houses.jpg";
 import natour from "./assets/natour.jpg";
 import medical from "./assets/medical.jpg";
@@ -56,7 +56,7 @@ function App() {
             path="/bootstrap"
             component={() => (
               <WorkDetail
-                title={`Customize Bootstrap`}
+                title={`Bootstrap`}
                 paragraph={`Since the entire Bootstrap source is written in the SASS language,it only makes sense that SASS is the recommended way to customize Bootstrap!`}
                 img={medical}
                 link={"https://connectfront.netlify.app/"}

@@ -1,7 +1,7 @@
 import React from "react";
 
-import berlin from "../assets/berlin.jpg";
-import mendoza from "../assets/mendoza.png";
+import berlin from "../../assets/berlin.jpg";
+import mendoza from "../../assets/mendoza.png";
 const About = () => {
   return (
     <div className="">

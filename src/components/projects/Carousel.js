@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import houses from "../assets/houses.jpg";
-import food from "../assets/food.jpg";
-import natour from "../assets/natour.jpg";
-import medical from "../assets/medical.jpg";
-import tutti from "../assets/tutti.jpg";
-import recipic from "../assets/recipic.jpg";
+import houses from "../../assets/houses.jpg";
+import food from "../../assets/food.jpg";
+import natour from "../../assets/natour.jpg";
+import medical from "../../assets/medical.jpg";
+import tutti from "../../assets/tutti.jpg";
+import recipic from "../../assets/recipic.jpg";
 
 const responsive = {
   0: { items: 1 },
