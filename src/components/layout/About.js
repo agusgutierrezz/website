@@ -7,7 +7,6 @@ const About = () => {
     <div className="">
       <div className="about">
         <img className="about__img--1" src={berlin} alt="Berlin" />
-
         <div className="about__img-ut">
           <img className="about__img--2" src={mendoza} alt="Mendoza" />
         </div>
@@ -16,22 +15,21 @@ const About = () => {
       <div className="about__text " id="about">
         <div className="about__text_primary">
           <h3>
-            I´m a Front End Developer based in Berlin working to make the web a
-            happier place.
+            Hi! I am Agus, a front-end developer based in Berlin working to make
+            the web a happier place!
           </h3>
         </div>
 
         <h5 className="about__text_secondary">
-          I’m a hard working and dedicated professional front-end developer/user
-          interface designer with a keen eye for detail, and a determination to
-          deliver the very highest quality. I take great pride in my work, and I
-          always try to better myself with every project I work on. I like to
-          write semantic, cross browser compatible code by hand that is
-          re-useable, maintainable and easy to understand. I am motivated,
-          enthusiastic and well organised, with a keen eye for beautiful design,
-          primarily based around user interfaces. The main areas of my expertise
-          are HTML(5), CSS(3) and JavaScript (native and jQuery) but I have
-          intermediate knowledge of PHP and MySQL.
+          As a developer, I like to code things from scratch and <b> enjoy</b>{" "}
+          bringing ideas to life in browser. <b>React</b> and <b>Css</b> are my
+          preferred languages since I truly enjoy to work with{" "}
+          <b> micro-interactions </b>
+          and <b>motion design</b> . I am confident, naturally curious,
+          open-minded, and not afraid to put my hands on new projects or
+          challenges.My focus always is helping small businesses and start-ups
+          build cohesive brand solutions and new products since I always take my
+          <b> passion</b>, knowledge, and expertise into each and every project.
         </h5>
       </div>
     </div>

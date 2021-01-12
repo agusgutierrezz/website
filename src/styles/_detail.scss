@@ -29,7 +29,7 @@
     @include respond(tab-port) {
       padding-bottom: 0rem;
       grid-gap: 10rem;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 5fr 1fr 1fr 1fr;
       grid-template-rows: 40vh auto;
       width: 70%;
       height: unset;

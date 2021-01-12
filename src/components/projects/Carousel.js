@@ -96,11 +96,13 @@ const items = [
         style={{ backgroundImage: `url(${tutti})` }}
       ></div>
     </div>
-    <p className="carousel__text">Name</p>
-    <button className="carousel__btn">
-      {" "}
-      <span className="carousel__span">&rarr;</span> Explore
-    </button>
+    <p className="carousel__text">Javascript</p>
+    <Link to={"/tutti"}>
+      <button className="carousel__btn">
+        {" "}
+        <span className="carousel__span">&rarr;</span> Explore
+      </button>
+    </Link>
   </div>,
   <div className="carousel__card--mar ">
     <div className="carousel__card-img ">
@@ -111,11 +113,13 @@ const items = [
     </div>
     <div className="carousel__card_info">
       {" "}
-      <p className="carousel__text">Name</p>
-      <button className="carousel__btn">
-        {" "}
-        <span className="carousel__span">&rarr;</span> Explore
-      </button>
+      <p className="carousel__text">Web Design</p>
+      <Link to={"/design"}>
+        <button className="carousel__btn">
+          {" "}
+          <span className="carousel__span">&rarr;</span> Explore
+        </button>
+      </Link>
     </div>
   </div>,
 ];

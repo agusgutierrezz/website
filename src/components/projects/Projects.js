@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "../layout/Header";
 import Bottom from "../layout/Bottom";
+import Project from "./Project";
 
 import houses from "../../assets/houses.jpg";
 import food from "../../assets/food.jpg";
@@ -22,26 +23,50 @@ const Projects = () => {
       />
       <Bottom />
       <div className="projects__container">
-        <div className="projects__text"></div>
         <div className="projects__images gallery">
-          <figure className="gallery_item gallery_item--1">
-            <img src={houses} alt="" className="gallery_img" />
-          </figure>
-          <figure className="gallery_item gallery_item--2">
-            <img src={food} alt="" className="gallery_img" />
-          </figure>
-          <figure className="gallery_item gallery_item--3">
-            <img src={natour} alt="" className="gallery_img" />
-          </figure>
-          <figure className="gallery_item gallery_item--4">
-            <img src={medical} alt="" className="gallery_img" />
-          </figure>
-          <figure className="gallery_item gallery_item--5">
-            <img src={tutti} alt="" className="gallery_img" />
-          </figure>
-          <figure className="gallery_item gallery_item--6">
-            <img src={recipic} alt="" className="gallery_img" />
-          </figure>
+          <div className="gallery_item gallery_item--1">
+            <Project
+              img={houses}
+              name={"Css Grid"}
+              link={"/grid"}
+              linkOut={"https://nexterfront.netlify.app/"}
+            />
+          </div>
+          <div className="gallery_item gallery_item--2">
+            <Project
+              img={food}
+              name={"React Hooks"}
+              link={"/ironcook"}
+              linkOut={"https://agusgutierrezz.github.io/drag-drop/"}
+            />
+          </div>
+          <div className="gallery_item gallery_item--3">
+            <Project
+              img={natour}
+              name={"CSS Interactions"}
+              link={"/cssInteractions"}
+              linkOut={"https://natourfront.netlify.app/"}
+            />
+          </div>
+          <div className="gallery_item gallery_item--4">
+            <Project
+              img={medical}
+              name={"Bootstrap"}
+              link={"/bootstrap"}
+              linkOut={"https://connectfront.netlify.app/"}
+            />
+          </div>
+          <div className="gallery_item gallery_item--5">
+            <Project
+              img={tutti}
+              name={"Javascript"}
+              link={"/tutti"}
+              linkOut={"https://agusgutierrezz.github.io/TuttiFrutti/"}
+            />
+          </div>
+          <div className="gallery_item gallery_item--6">
+            <Project img={recipic} name={"Web Design"} link={"/design"} />
+          </div>
         </div>
       </div>
     </div>

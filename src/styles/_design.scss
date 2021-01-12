@@ -1,0 +1,32 @@
+.design {
+  &_bg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include respond(tab-port) {
+      height: 100vh;
+      flex-direction: row;
+    }
+  }
+  &__img {
+    &__container {
+      width: 100%;
+      margin: 3rem 0rem;
+      @include respond(tab-port) {
+        width: 40%;
+      }
+    }
+    width: 100%;
+    object-fit: cover;
+    &--1 {
+    }
+    &--2 {
+    }
+    &--3 {
+    }
+    &--4 {
+    }
+  }
+}

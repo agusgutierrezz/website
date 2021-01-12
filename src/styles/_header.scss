@@ -26,9 +26,9 @@
   }
   &__title {
     position: absolute;
-    font-size: 2rem;
-    width: 90%;
-    top: 40%;
+    font-size: 3rem;
+    width: 85%;
+    top: 30%;
     font-weight: 200;
     margin-left: 4rem;
     line-height: 1.25;
@@ -41,7 +41,7 @@
     word-wrap: break-word;
     @include respond(tab-port) {
       left: 15%;
-      top: 40%;
+      top: 20%;
       font-size: 6rem;
       font-weight: lighter;
       width: 60%;
@@ -54,9 +54,9 @@
     font-weight: 200;
     font-family: $font-primary;
     position: fixed;
-    right: -2.5rem;
+    right: 0rem;
     top: 15rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
     transform: rotate(-90deg);
     z-index: 1000;
     /* Legacy vendor prefixes that you probably don't need... */
