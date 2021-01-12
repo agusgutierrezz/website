@@ -26,6 +26,15 @@
     &-m {
       padding-bottom: 2rem;
     }
+    &-img {
+      cursor: pointer;
+    }
+    &-copy {
+      width: 80%;
+      margin-top: 2rem;
+      padding-bottom: 5rem;
+      justify-content: start;
+    }
   }
   &__info {
     margin-top: 3rem;

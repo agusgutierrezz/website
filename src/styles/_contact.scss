@@ -31,9 +31,9 @@
   }
   &__assets {
     width: 80%;
-    padding: 5rem;
+    margin-top: 10rem;
     @include respond(tab-port) {
-      padding: 0rem;
+      margin-top: 0rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -56,8 +56,8 @@
 
       text-align: left;
       font-size: 5rem;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
       @include respond(tab-port) {
         align-self: flex-start;
         margin: 0;
