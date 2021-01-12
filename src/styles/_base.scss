@@ -67,20 +67,23 @@ body {
   cursor: pointer;
 }
 .bottom {
-  font-size: 5rem;
-  position: absolute;
-  top: 40rem;
-  left: 2rem;
-  animation-name: moveInTop;
-  animation-duration: 2s;
-  animation-delay: 1.2s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-out;
-  cursor: pointer;
-  z-index: 120;
+  display: none;
+
   @include respond(tab-port) {
     font-size: 10rem;
+    display: block;
     top: 30rem;
     left: 2rem;
+    font-size: 5rem;
+    position: absolute;
+    top: 40rem;
+    left: 2rem;
+    animation-name: moveInTop;
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    cursor: pointer;
+    z-index: 120;
   }
 }
