@@ -2,26 +2,29 @@ import React, { useEffect } from "react";
 import Header from "../layout/Header";
 import Bottom from "../layout/Bottom";
 import Project from "./Project";
-
 import houses from "../../assets/houses.jpg";
 import food from "../../assets/food.jpg";
 import natour from "../../assets/natour.jpg";
 import medical from "../../assets/medical.jpg";
 import tutti from "../../assets/tutti.jpg";
 import recipic from "../../assets/recipic.jpg";
-const Projects = () => {
+const Projects = ( props) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
+ 
 
   return (
     <div>
-      <Header
+      {props.headerShow &&
+     <div> <Header
         link={"/"}
         place={"Back to home"}
         name={"Look around and enjoy my work!"}
       />
       <Bottom />
+      </div>
+    }
       <div className="projects__container">
         <div className="projects__images gallery">
           <div className="gallery_item gallery_item--1">
